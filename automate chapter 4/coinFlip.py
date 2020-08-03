@@ -1,8 +1,7 @@
 import random
-numberOfStreaks = 0
 currentStreak = []
-maintainT = 0
-maintainH = 0
+
+
 def cointoss():
     for experimentNumber in range(10000):
         cointoss = random.randint(0,1)
@@ -16,17 +15,23 @@ def run():
 
 def streak():
     count = 0
-    if len(currentStreak) == 0:
-        print("Empty list")
+    numberOfStreaks = 0
+    for x in currentStreak:
+        if x == 0:
+            count+= 1
+            if x == 1:
+                count = 0
+            else count == 6:
+                numberOfStreaks+= 1
+
+        else x == 1:
+            count+= 1
+            if x == 0:
+                count = 0
+            else count == 6:
+                numberOfStreaks+= 1
         return numberOfStreaks
-    else:
-        print(currentStreak)
-        for index in currentStreak:
-            if index - 1 == index and count <= 6:
-                count=+ 1
-                if count == 6:
-                    numberOfStreaksStreak =+ 1
-                return numberOfStreaks
+
 
 run()
 print('Chance of streak: %s%%' % (numberOfStreaks / 100))
