@@ -1,35 +1,35 @@
 import random
-tossedCoins = []
+currentStreak = []
 
 
-def cointoss(tossedCoins):
+def cointoss():
     for experimentNumber in range(10000):
         cointoss = random.randint(0,1)
-        tossedCoins.append(cointoss)
+        currentStreak.append(cointoss)
         # Code that checks if there is a streak of 6 heads or tails in a row.
-    return tossedCoins
+    return currentStreak
 
 def run():
-    result = cointoss(tossedCoins)
-    streak(tossedCoins)
+    result = cointoss()
+    streak()
 
-def streak(tossedCoins):
-    streak_Count = 0
+def streak():
+    count = 0
     numberOfStreaks = 0
     for x in currentStreak:
-        if x == 0 and streak_Count < 6
-            streak_Count+= 1
-            if streak_Count == 6:
+        if x == 0:
+            count+= 1
+            if count == 6:
                 numberOfStreaks+= 1
+                return numberOfStreaks
 
-        else:
-            streak_Count += 1
-            if x == 0:
-                streak_Count = 0
-            elif streak_Count == 6:
+        if x == 1:
+            count+= 1
+            if count == 6:
                 numberOfStreaks+= 1
-    print('Chance of streak: %s%%' % (numberOfStreaks / 100))
-    return tossedCoins
+                return numberOfStreaks
+
 
 
 run()
+print('Chance of streak: %s%%' % (numberOfStreaks / 100))
