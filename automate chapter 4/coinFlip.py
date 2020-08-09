@@ -28,6 +28,7 @@ def streak(currentStreak):
                 print(count)
                 if count == 6:
                     numberOfStreaks+=1
+                    count = 0
         elif currentCoin == 1:
             count+=1
             if currentCoin != next_coin:
@@ -37,6 +38,8 @@ def streak(currentStreak):
                 print(count)
                 if count == 6:
                     numberOfStreaks+=1
+                    count = 0
+    print('Chance of streak: %s%%' % (numberOfStreaks / 100))
     return numberOfStreaks
 
 run()
