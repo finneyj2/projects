@@ -18,19 +18,20 @@ def streak(currentStreak):
     for coin in range(0, current_Streak_Len - 1):
         numberOfStreaks = 0
         currentCoin = currentStreak[coin]
+        next_coin = currentStreak[coin + 1]
         if currentCoin == 0:
             count+=1
-            if currentCoin != currentStreak[coin + 1]:
+            if currentCoin != next_coin:
                 count = 0
-            elif currentCoin == currentStreak[coin + 1]:
+            elif currentCoin == next_coin:
                 count+=1
                 if count == 6:
                     numberOfStreaks+=1
         elif currentCoin == 1:
             count+=1
-            if currentCoin != currentStreak[coin + 1]:
+            if currentCoin != next_coin:
                 count = 0
-            elif currentCoin == currentStreak[coin + 1]:
+            elif currentCoin == next_coin:
                 count+=1
                 if count == 6:
                     numberOfStreaks+=1
