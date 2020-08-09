@@ -11,7 +11,7 @@ def cointoss():
 def run():
     result = cointoss()
     streak(currentStreak)
-
+    #print(streak(currentStreak))
 def streak(currentStreak):
     count = 0
     current_Streak_Len = len(currentStreak)
@@ -25,6 +25,7 @@ def streak(currentStreak):
                 count = 0
             elif currentCoin == next_coin:
                 count+=1
+                print(count)
                 if count == 6:
                     numberOfStreaks+=1
         elif currentCoin == 1:
@@ -33,9 +34,9 @@ def streak(currentStreak):
                 count = 0
             elif currentCoin == next_coin:
                 count+=1
+                print(count)
                 if count == 6:
                     numberOfStreaks+=1
-    print('Chance of streak: %s%%' % (numberOfStreaks / 100))
     return numberOfStreaks
 
 run()
