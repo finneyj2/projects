@@ -2,6 +2,7 @@ import pprint
 
 stuff = {'rope': 1, 'torch': 6, 'gold coin': 42, 'dagger': 1, 'arrow': 12}
 
+
 def display_Inventory(inventory):
     print("Inventory:")
     item_total = 0
@@ -13,7 +14,6 @@ def display_Inventory(inventory):
 
 def addToInventory(inventory, addedItems):
     count = 0
-    inv.setdefault('dagger', 1)
     x = inv['gold coin']
     y = inv['dagger']
     gold = int(x)
@@ -24,9 +24,10 @@ def addToInventory(inventory, addedItems):
             inv[item] += 1
         else:
             inv[item] = 1
+    print("You have added to your inventory" + str(inv))
 
 
-inv = {'gold coin': 42, 'rope': 1}
+inv = {'gold coin': 42, 'rope': 1, 'dagger': 0}
 dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
 inv = addToInventory(inv, dragonLoot)
-display_Inventory(inv)
+display_Inventory(stuff)
