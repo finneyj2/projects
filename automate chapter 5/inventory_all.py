@@ -19,22 +19,14 @@ def addToInventory(inventory, addedItems):
     gold = int(x)
     dagger = int(y)
 
-    for i in dragonLoot:
-        if i == 'gold coin':
-            count+=1
-            math_gold = gold + count
-            inv.update({'gold coin': math_gold})
-        if i == 'dagger':
-            count+=1
-            math_dagger = dagger + count
-            inv.update({'dagger':math_dagger})
-        if i == 'ruby':
-            count+= 1
-            inv['ruby'] = 1
-
+    for item in dragonLoot:
+        if item in inv.keys():
+            inv[item] += 1
+        else:
+            inv[item] = 1
 
 
 inv = {'gold coin': 42, 'rope': 1}
 dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
 inv = addToInventory(inv, dragonLoot)
-display_Inventory(stuff)
+display_Inventory(inv)
