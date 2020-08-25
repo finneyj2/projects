@@ -12,12 +12,28 @@ def display_Inventory(inventory):
     print("Total number of items: " + str(item_total))
 
 def addToInventory(inventory, addedItems):
-    for k, v in inv.items():
-        if inv[k] in dragonLoot:
-            print(test)
+    count = 0
+    x = inv.get('gold coin')
+    y = inv.get('dagger')
+    gold = int(x)
+    dagger = int(y)
+
+    for i in dragonLoot:
+        if i == 'gold coin':
+            count+=1
+            math_gold = gold + count
+            inv.update({'gold coin': math_gold})
+        if i == 'dagger':
+            count+=1
+            math_dagger = dagger + count
+            inv.update({'dagger':math_dagger})
+        if i == 'ruby':
+            count+= 1
+            inv['ruby'] = 1
+
 
 
 inv = {'gold coin': 42, 'rope': 1}
 dragonLoot = ['gold coin', 'dagger', 'gold coin', 'gold coin', 'ruby']
 inv = addToInventory(inv, dragonLoot)
-display_Inventory(inv)
+display_Inventory(stuff)
