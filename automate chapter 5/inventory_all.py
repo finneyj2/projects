@@ -13,8 +13,9 @@ def display_Inventory(inventory):
 
 def addToInventory(inventory, addedItems):
     count = 0
-    x = inv.get('gold coin')
-    y = inv.get('dagger')
+    inv.setdefault('dagger', 1)
+    x = inv['gold coin']
+    y = inv['dagger']
     gold = int(x)
     dagger = int(y)
 
