@@ -15,3 +15,5 @@ while responseY == 'Yes':
     decision2 = pyip.inputYesNo('Do you want cheese?')
     if decision2 == 'yes':
         pyip.inputMenu(['Swiss', 'Cheddar', 'Mozarella'])
+
+    decision3 = pyipYesNo('Do you want mayo?')
