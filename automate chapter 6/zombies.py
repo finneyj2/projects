@@ -21,13 +21,19 @@ class MyZombie:
 
         # REPLACE THIS ZOMBIE CODE WITH YOUR OWN:
         brains = 0
+        shots = 0
+
         while diceRollResults is not None:
             brains += diceRollResults['brains']
+            shots += diceRollResults['shotgun']
 
-            if brains < 2:
-                diceRollResults = zombiedice.roll() # roll again
-            else:
-                break
+            while shots < 3 and brains < 13:
+                answer = input("Would you want to roll again?")
+                    if answer == "yes":
+                        diceRollResults = zombiedice.roll() # roll again
+                    else:
+                        break
+
 
 zombies = (
     zombiedice.examples.RandomCoinFlipZombie(name='Random'),
