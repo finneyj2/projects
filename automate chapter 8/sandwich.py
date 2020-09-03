@@ -1,8 +1,13 @@
 import pyinputplus as pyip
 
 
-responseY = pyip.inputYesNo("Would you like a sandwich?")
-while responseY == 'Yes':
+def decision():
+    responseY = pyip.inputYesNo("Would you like a sandwich?")
+    while responseY == 'Yes':
+        SandwichBuilder()
+
+
+def SandwichBuilder():
     print('What is your preferred sandwich bread?')
     response = pyip.inputMenu(['Wheat', 'Sourdough', 'White'])
 
@@ -17,3 +22,5 @@ while responseY == 'Yes':
         pyip.inputMenu(['Swiss', 'Cheddar', 'Mozarella'])
 
     decision3 = pyipYesNo('Do you want mayo?')
+
+decision()
