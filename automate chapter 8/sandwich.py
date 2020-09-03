@@ -10,8 +10,8 @@ def decision():
 
 def SandwichBuilder():
     breadCost = {'Wheat': 5, 'Sourdough': 6, 'White': 7}
-    print('What is your preferred sandwich bread? The costs are')
-    response = pyip.inputMenu('Wheat', 'Sourdough', 'White')
+    print('What is your preferred sandwich bread?')
+    response = pyip.inputMenu(['Wheat', 'Sourdough', 'White'])
     decision = pyip.inputYesNo('Do you want protein?')
     if decision == 'yes':
         pyip.inputMenu(['Ham', 'Chicken', 'Tuna', 'Bacon'])
