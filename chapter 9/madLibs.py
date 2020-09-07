@@ -12,8 +12,9 @@ def literature(file):
 
 def options(file):
     with open(file) as f:
-        if 'adjective' in f.read():
-            print('found')
+        for line in f:
+            if 'adjective' in f.read():
+                ask = pyip.inputStr('Pick your adjective!')
 
 
 
