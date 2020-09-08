@@ -6,15 +6,22 @@ def literature(file):
     madL.close()
     ask = pyip.inputStr('Would you like to play madLibs?')
     if ask == 'yes':
-        p = Path('new_Libs.txt')
-        p.write_text(content)
-        options(file)
+        lit = " "
+        with open(file, 'r') as file:
+            for line in file:
+                lit += str(line).rstrip("\n")+" "
+    return lit
 
-def options(file):
-    with open(file) as f:
-        for line in f:
-            if 'adjective' in f.read():
-                ask = pyip.inputStr('Pick your adjective!')
+
+def options():
+    lit = literature('libs.txt')
+    for line in lit:
+        if "adjective" in lit:
+            ask = pyip.inputStr('Pick your adjective!')
+            lit.replace("adjective", ask)
+            print(lit)
+        else:
+            print("Not found")
 
 
 
@@ -23,4 +30,4 @@ def options(file):
 
 
 literature('libs.txt')
-options('libs.txt')
+options()
