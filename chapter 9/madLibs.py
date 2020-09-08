@@ -18,7 +18,7 @@ def options():
     for line in lit:
         if "adjective" in lit:
             ask = pyip.inputStr('Pick your adjective!')
-            lit.replace("adjective", ask)
+            lit = lit.replace("adjective", ask)
             print(lit)
         else:
             print("Not found")
