@@ -20,8 +20,6 @@ def options():
             ask = pyip.inputStr('Pick your adjective!')
             lit = lit.replace("adjective", ask)
             print(lit)
-        else:
-            print("Not found")
 
 
 
