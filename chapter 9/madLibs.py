@@ -25,6 +25,10 @@ def options():
         if "verb" in lit:
             askV = pyip.inputStr('Pick your verb!')
             lit = lit.replace("verb", askV)
+    newMadL = open("newLibs.txt", "w")
+    newMadL.write(lit)
+
+
 
 
 
