@@ -19,7 +19,12 @@ def options():
         if "adjective" in lit:
             ask = pyip.inputStr('Pick your adjective!')
             lit = lit.replace("adjective", ask)
-            print(lit)
+        if "noun" in lit:
+            askN = pyip.inputStr('Pick your noun!')
+            lit = lit.replace("noun", askN)
+        if "verb" in lit:
+            askV = pyip.inputStr('Pick your verb!')
+            lit = lit.replace("verb", askV)
 
 
 
