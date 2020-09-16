@@ -9,6 +9,5 @@ def search():
     for x in txtList:
         x.read_text()
         y = re.search(ask, txtlistStr)
-        print("found")
 
 search()
