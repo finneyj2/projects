@@ -1,7 +1,14 @@
 from pathlib import Path
+import pyinputplus as pyip, re
 
 def search():
     p = Path('C:/Users/jahli/Practice/chapter 9')
     txtList = list(p.glob('*.txt'))
+    txtlistStr = str(txtList)
+    ask = pyip.inputStr("What word are you looking for?")
     for x in txtList:
         x.read_text()
+        y = re.search(ask, txtlistStr)
+        print("found")
+
+search()
