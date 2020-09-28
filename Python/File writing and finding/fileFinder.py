@@ -9,7 +9,8 @@ def search():
     for x in txtList:
         x.read_text()
         mo = re.search(ask, txtlistStr)
-        if mo.group() != null:
+        k = mo.group()
+        if  k != None:
             print("Found")
         else:
             "Not found."
