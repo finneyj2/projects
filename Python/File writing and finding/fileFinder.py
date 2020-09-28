@@ -8,6 +8,10 @@ def search():
     ask = pyip.inputStr("What file are you looking for?")
     for x in txtList:
         x.read_text()
-        y = re.search(ask, txtlistStr)
+        mo = re.search(ask, txtlistStr)
+        if mo.group() != null:
+            print("Found")
+        else:
+            "Not found."
 
 search()
