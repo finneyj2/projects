@@ -7,7 +7,7 @@ def search():
     txtlistStr = str(txtList)
     print(txtlistStr)
     ask = pyip.inputStr("What file are you looking for?")
-    for x in txtList:
+    for x in txtlistStr:
         x.read_text()
         print(x)
         mo = re.search(ask, txtlistStr)
