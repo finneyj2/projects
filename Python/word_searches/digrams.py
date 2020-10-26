@@ -9,7 +9,8 @@ def dict(dictionary):
 
 def digram_and_freq_finder():
     word = "tmvoordle"
-    di = []
+    di = ["tm", "mv", "vo", "or", "rd", "dl", "le"]
     for let in word:
+
 
     #digram and frequency finder
