@@ -4,12 +4,13 @@ import re
 """A Program to find digrams(letter pairings to occur consecutive)"""
 def main():
     #main function that will trigger the program
-    dir = dict("hm.txt")
+    dir = dict_Open("hm.txt")
     x = digram_and_freq_finder(dir)
+    print(dir)
     print(x)
 
 
-def dict(Onl_D):
+def dict_Open(Onl_D):
     with open(Onl_D) as in_file:
         loaded_txt = in_file.read().strip().split('\n')
         str_load = " "
