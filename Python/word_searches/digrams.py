@@ -1,7 +1,7 @@
 from collections import Counter
 import re
 
-"""A Program to find digrams(letter pairings to occur consecutive) in dictionaries"""
+"""A Program to find digrams(letter pairings to occur consecutive)"""
 def main():
     #main function that will trigger the program
     dir = dict("hm.txt")
@@ -20,11 +20,12 @@ def dict(Onl_D):
 
 
 def digram_and_freq_finder(Onl_D):
-    di = ["tm", "mv", "vo", "or", "rd", "dl", "le"]
-    for let in di:
-        words = re.findall(str(let), Onl_D)
-        D_count = Counter(words)
-    return D_count
+    di = {"tm":0, "mv":0, "vo":0, "or":0, "rd":0, "dl":0, "le":0}
+    for let in di.keys():
+        re.findall(str(let), Onl_D)
+        if let in Onl_D:
+            di[let]+= 1
+    return di
 
 
 main()
