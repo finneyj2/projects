@@ -22,10 +22,13 @@ def dict_Open(Onl_D):
 
 def digram_and_freq_finder(Onl_D):
     di = {"tm":0, "mv":0, "vo":0, "or":0, "rd":0, "dl":0, "le":0}
+    sum = None
     for let in di.keys():
-        re.findall(str(let), Onl_D)
+        sumOfMatches = re.findall(str(let), Onl_D)
         if let in Onl_D:
-            di[let]+= 1
+            di[let]+= len(sumOfMatches)
+            sum = di
+
     return di
 
 
