@@ -1,0 +1,46 @@
+drop table regSalary;
+create table regSalary (
+School_Name varchar,
+Region varchar,
+Starting_Median_Salary varchar,
+Mid_Career_Median_Salary varchar,
+Mid_Career_10th_Percentile_Salary varchar,
+Mid_Career_25th_Percentile_Salary varchar,
+Mid_Career_75th_Percentile_Salary varchar,
+Mid_Career_90th_Percentile_Salary varchar
+);
+
+drop table degSalary;
+create table degSalary (
+School_Name varchar,
+Region varchar,
+Starting_Median_Salary varchar,
+Mid_Career_Median_Salary varchar,
+Mid_Career_10th_Percentile_Salary varchar,
+Mid_Career_25th_Percentile_Salary varchar,
+Mid_Career_75th_Percentile_Salary varchar,
+Mid_Career_90th_Percentile_Salary varchar
+);
+
+
+drop table colSalary;
+create table colSalary (
+School_Name varchar,
+School_Type varchar,
+Starting_Median_Salary varchar,
+Mid_Career_Median_Salary varchar,
+Mid_Career_10th_Percentile_Salary varchar,
+Mid_Career_25th_Percentile_Salary varchar,
+Mid_Career_75th_Percentile_Salary varchar,
+Mid_Career_90th_Percentile_Salary varchar
+);
+
+.separator ","
+/* find the file and load it into sqlite3 which will create the database.*/
+.import data/salaries-by-region.csv regSalary
+
+/* cat <thisFile.txt> | sqlite3 salary.sqlite3 */
+
+.import data/degrees-that-pay-back.csv degSalary
+
+.import data/salaries-by-college-typetest.csv colSalary
