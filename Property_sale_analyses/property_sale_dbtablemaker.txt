@@ -1,0 +1,27 @@
+drop table propertysales;
+create table propertysales (
+PARID varchar,
+PROPERTYHOUSENUM varchar,
+PROPERTYFRACTION varchar,
+PROPERTYADDRESSUNITDESC varchar,
+PROPERTYADDRESSDIR varchar,
+PROPERTYADDRESSSTREET varchar,
+PROPERTYADDRESSSUF varchar,
+PROPERTYUNITNO varchar,
+PROPERTYCITY varchar,
+PROPERTYSTATE varchar,
+PROPERTYZIP varchar,
+SCHOOLCODE varchar,
+SCHOOLDESC varchar,
+MUNICODE varchar,
+MUNIDESC varchar,
+RECORDDATE text,
+SALEDATE text,
+PRICE integer,
+DEEDBOOK varchar,
+DEEDPAGE varchar,
+SALECODE varchar,
+SALEDESC varchar,
+INSTRTYP varchar,
+INSTRTYPDESC varchar
+);
