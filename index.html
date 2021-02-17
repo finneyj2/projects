@@ -30,6 +30,7 @@
 .column {
   float: left;
   padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
 }
 
 
@@ -40,7 +41,12 @@
 .right {
   width: 75%;
 }
-   
+  
+  .row:after {
+  content: "";
+  display: table;
+  clear: both;
+} 
   </style>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
