@@ -56,8 +56,28 @@
     <body style="background-color: #bbb;">
     <meta charset="utf-8">
     <title>Some things about myself</title>
-   
+   <div class="row">
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>Property Value Blog Post 1- Missing Values</h2>
+      <h5>The pre-first step step, March 11, 2021</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      <p>Coming into this analysis of property values, I had three main elements that I wanted to investigate
+How much the price of properties in PA changed approximately 8 years.
+How much property values changed in PA per city
+And the average price of a home per school district
 
+	Before I discuss my questions for this dataset and how I approached answering them, I’m going to list it’s basic properties. The Property-Values dataset had 307755 individual entries across 23 columns. The columns included were Property-House-Number, Property-Fraction, Property-Address-Dir, Property-Address-Street, Property-Address-Suf, Property-Address-Unit-Desc, Property-Unit-Number, Property-City, Property-State, Property-Zip, School-Code, School-Desc, Municipal-Code, Municipal-District, Recorded-Date, Sale-Date, price, DeedBook, DeedPage, SaleCode, Sale-Desc, Instrument Type, Instrument Description.
+
+
+To process this data into a usable form, some extra steps had to be taken. The property-sales dataset that I was working with had not been cleaned, it was a raw dataset. This dataset had some missing data points (most notably in the Price column) which had to be addressed before I commenced with any analysis. In my dataset, missing data was indicated by ‘NaN’(as pictured below)
+        <img src="https://finneyj2.github.io/projects/img/Screenshots/is_null_1.PNG">
+        I decided to address this  issue by using imputation to replace the missing values with the mean(https://www.kaggle.com/dansbecker/handling-missing-values)
+        <img src="https://finneyj2.github.io/projects/img/Screenshots/fill_na_mean.PNG">
+      </p>
+    </div>
+    </body>
+     </html>
   <!-- Add your site or application content here -->
  
   <nav>
