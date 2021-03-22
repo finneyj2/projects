@@ -61,14 +61,14 @@
    <h5>The real first step, March 11, 2021</h5>
    <img src="https://finneyj2.github.io/projects/img/Site_Images/isaac-smith-6EnTPvPPL6I-unsplash.jpg" width="500" height="410">
    <p> Before I investigated the change in property sale prices over time, I wanted to get an idea of the dataset’s overall distribution. So, I calculated the descriptive statistics for the sale prices of properties from 2012 to 2020(pictured below).
-  <img src="https://finneyj2.github.io/projects/img/Screenshots/price_general_stats.PNG">
+  <img src="https://finneyj2.github.io/projects/img/Screenshots/price_general_stats.PNG" widith="600">
   As you can see, this dataset is extremely skewed and it has over 300,000 datapoints. Both these issues make visualizing these data difficult.I solved this by converting the... to a logarithmic scale in order to make visualizing this dataset much easier(as pictured below). The steps I convert my prices to a logarithmic scale were as follows:
 <ol>
 <li>I created a new column in my dataframe called “PRICE_LOG”, to which I copied all of the data from the original Price column. </li>
 <li>I added .001 because some of the prices listed in the column are 0. Add units </li>
 <li> I converted the prices in my new column to a logarithmic scale(these are all pictured below) </li>
 </ol>
-  <img src="https://finneyj2.github.io/projects/img/Screenshots/log_conversion.PNG">
+  <img src="https://finneyj2.github.io/projects/img/Screenshots/log_conversion.PNG" widith="600">
   After that, I created another new column that would list only the year in which a property was sold. The reason why I wanted a column that only displays the year is because I wanted my graph to show the changes in sale prices throughout the years. The steps I took were as follows:
 <ol>
 <li> I created a variable that extracted ‘year’ from a given saledate, which used the datetimeindex </li>
@@ -76,16 +76,16 @@
 <li>I made a new variable that had the columns PRICE and my new column SALE-YEAR, then I grouped it by saleyear and had the average automatically calculated. </li>
 <li>I had a graph drawn(this process is depicted as below) </li>
 </ol>
-<img src="https://finneyj2.github.io/projects/img/Screenshots/sale_year.PNG">
-<img src="https://finneyj2.github.io/projects/img/Screenshots/line_graph_log.PNG">
+<img src="https://finneyj2.github.io/projects/img/Screenshots/sale_year.PNG" widith="600">
+<img src="https://finneyj2.github.io/projects/img/Screenshots/line_graph_log.png" widith="600">
 
 This is good for seeing overall trends, but if I get a clearer idea of how much things changed, a different method is needed. The first thing I did was create two sets of date intervals. The first set was for the first year of the dataset(2012), and the second set was for the final year of the dataset(2020).
 
-<img src="https://finneyj2.github.io/projects/img/Screenshots/datetime.PNG">
+<img src="https://finneyj2.github.io/projects/img/Screenshots/datetime.PNG" widith="600">
 
 Then after that I ran descriptive statistics for the sales that took place during 2012 and 2020, respectively. I did thing because I wanted an idea of how much the average sale amount, and overall sale count, changed between 2012 and 2020.
-<img src="https://finneyj2.github.io/projects/img/Screenshots/price_stats_2020">
-<img src="https://finneyj2.github.io/projects/img/Screenshots/prices_stats_2012.PNG">
+<img src="https://finneyj2.github.io/projects/img/Screenshots/price_stats_2020" widith="600">
+<img src="https://finneyj2.github.io/projects/img/Screenshots/prices_stats_2012.PNG" widith="600">
 From the charts above, we can see that 26,976 sales took place in 2020, down from 33,822 in 2012. Despite this, the average sale made was higher in 2020 than in 2012 by about $65,000. Both 2012 and 2020 had the same minimum sale price of $0, but their largest sales did have differences. The largest sale made in 2020 was 112,000,000, about 2.5 times more than 2012’s highest sale of 48,000,000.  Lastly, the significant decrease in sales from 2012 to 2020 made me interested in examining the change
 on a yearly basis, so I graphed that too(this is pictured below)
-<img src="https://finneyj2.github.io/projects/img/Screenshots/sale_amounts_log.PNG">
+<img src="https://finneyj2.github.io/projects/img/Screenshots/sale_amounts_log.png" widith="600">
