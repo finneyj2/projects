@@ -49,8 +49,8 @@
   <div class="topnav">
 
   <a href="https://finneyj2.github.io/projects/">Home</a>
-  <a href="https://finneyj2.github.io/projects/Pages/Miscellaneous_Coding_Projects.html>Other Coding Projects</a>
-  <a href="https://finneyj2.github.io/projects/Pages/Blog_Posts/Blog_Posts.html"> Data Analysis Blog Posts </a>
+  <a href="https://finneyj2.github.io/projects/Pages/Miscellaneous_Coding_Projects.html">Other Coding Projects</a>
+  <a href="https://finneyj2.github.io/projects/blog_posts/blog_posts.html"> Data Analysis Blog Posts </a>
 </div>
 <body style="background-color: #bbb;">
 <meta charset="utf-8">
@@ -60,11 +60,11 @@
  <div class="card">
    <h2>Property Value Blog Post 2- Prices and Changes</h2>
    <h5>The real first step, March 11, 2021</h5>
-   
+
    <img src="https://finneyj2.github.io/projects/img/Site_Images/isaac-smith-6EnTPvPPL6I-unsplash.jpg" width="500" height="410">
-  
+
    <p> Before I investigated the change in property sale prices over time, I wanted to get an idea of the dataset’s overall distribution. So, I calculated the descriptive statistics for the sale prices of properties from 2012 to 2020(pictured below). </p>
-  
+
      <img src="https://finneyj2.github.io/projects/img/Screenshots/price_general_stats.PNG" width="600">
  <p> As you can see, this dataset is extremely skewed and it has over 300,000 datapoints. Both these issues make visualizing these data difficult.I solved this by converting the... to a logarithmic scale in order to make visualizing this dataset much easier(as pictured below). The steps I convert my prices to a logarithmic scale were as follows:
 <ol>
@@ -73,7 +73,7 @@
 <li> I converted the prices in my new column to a logarithmic scale(these are all pictured below) </li>
    </ol> </p>
   <img src="https://finneyj2.github.io/projects/img/Screenshots/log_conversion.PNG" width="600">
-   
+
  <p> After that, I created another new column that would list only the year in which a property was sold. The reason why I wanted a column that only displays the year is because I wanted my graph to show the changes in sale prices throughout the years. The steps I took were as follows:
 <ol>
 <li> I created a variable that extracted ‘year’ from a given saledate, which used the datetimeindex </li>
