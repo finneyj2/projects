@@ -54,7 +54,7 @@
 </div>
 <body style="background-color: #bbb;">
 <meta charset="utf-8">
-<title>Some things about myself</title>
+<title> Schools and Property Values</title>
 <div class="row">
 <div class="rightcolumn">
  <div class="card">
@@ -77,6 +77,12 @@
      <img src="https://finneyj2.github.io/projects/img/Screenshots/whiteoak_confirmed.png">
     <p> As you can see, the average sale value of the Homes in Witaker, Whiteoak and Westview that are included in this dataset are actually quite low. Still, it's good practice to check because everyone makes mistakes </p>
     <p> The next thing I did was track how the average property value per school district changed over time. </p>
+    <ol>
+      <li> The first thing I did was create a variable that had three columns of my dataframe selected(price, saledate, and school district)</li>
+      <li> My second step was to make a subplot statement so that I could easily adjust the size of the plot </li>
+      <li>  Steps three through four are more about breaking down one line of code. And my third step was to group my variable by it's saledate and price, and then calculate the average</li>
+      <li> Lastly, I used unstack to make sure that the school districts were graphed individually, instead of cumulatively. Then I plotted it(this is displayed below) </li>
+    </ol>
     <img src="https://finneyj2.github.io/projects/img/Screenshots/school_districts_together.png">
     <img src="https://finneyj2.github.io/projects/img/Screenshots/school_districts_together_code.png">
 
