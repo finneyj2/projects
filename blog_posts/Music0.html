@@ -59,3 +59,23 @@
 <div class="rightcolumn">
  <div class="card">
    <div class="card-body">
+     <p> The dataset that I am using has come entirely from Catharine Rasgaitis’s Music and Mental Health Survey. Despite this, I largely ignore the mental health data that was collected from the survey. I decided to ignore this information due to the dataset’s limitations. The survey asks if the participants’ have OCD, Anxiety, Depression or Insomnia, but does not inquire about diagnosis status. And additionally, the severity of the mental illness experienced by participants is entirely measured by self reports. Generally, this negatively impacts precision and accuracy, so I did not include the mental health data.  
+
+I began data preparation immediately after acquiring the mxmh file from kaggle. Unlike the property values dataset, this dataset was largely void of missing values and tableau would ignore the few found. However, it came with it own set of challenges.  In order to extensively and properly graph survey data in tableau, three datasheets are necessary. They are the values coded as categorical data and numerical data, accompanied by a helper file, each on a different sheet. Unfortunately, the kaggle data had been exclusively coded categorically, so I made the remaining files myself. The process was fairly simple, I gave each scalepoint a value that corresponded to it’s established order in the dataset’s kaggle profile(pictured below). 
+
+
+
+
+"Never" was assigned the value of 1, "Rarely" was assigned 2, "Sometimes" was assigned 3, and "Very Frequently" was assigned 4. For binary questions, I encoded the values as either 0 (‘no’) or 1 (‘yes’) in order to simplify the results of the correlation tests. I simplified this process by using vlookup, which is pictured below. 
+<img src ="https://github.com/finneyj2/projects/blob/gh-pages/img/Screenshots/value_assignments.PNG"></p>
+     
+<p>
+My final step of the data prep was creating the helper file (pictured below). 
+<img src= "https://github.com/finneyj2/projects/blob/gh-pages/img/Screenshots/helper_file.PNG">
+On qualtrics, both the categorical and numerical forms of the data are available to the user. Consequently, these steps won’t be necessary if your data is collected via that platform.
+
+
+After data preparation, I moved on to the exploratory data analysis. Tableau was used to complete the vast majority of the EDA, and each question was graphed.
+<img src="https://github.com/finneyj2/projects/blob/gh-pages/img/Screenshots/Movies.PNG"
+  After visualizing the questions, I reviewed the data and noticed some interesting things that will be explored in my next post.
+     </p>
