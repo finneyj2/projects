@@ -64,7 +64,7 @@
 
 <p>>In order to properly measure this, I ran an ordinary least squares regression with multiple different identities serving as the IVs, while music genres remained the dependent variable. The genres included were Classical, Country, EDM, Folk, Gospel, Hip hop, Jazz, K pop, Latin, Lofi, Metal, Pop, R&B, Rap, Rock, and video game music. I conducted the analysis using python, specifically the statsmodels and pandas libraries. </p>
 
-<img src="https://finneyj2.github.io/projects/img/Screenshots/stat_v.PNG" width="500" height="410"/>
+<img src="https://finneyj2.github.io/projects/img/Screenshots/stat_v.PNG" width="800" height="810"/>
 
 <p>As you can see above, this process was fairly simple. I used a for-loop and a string cast because I didn’t want to run 16 individual regression analyses per new IV.  This process was repeated for all of the linear regression analyses I conducted. </p>
 
@@ -79,7 +79,7 @@
 <p>After this, I ran a regression analysis on the role of age. With the exception of R&B and Rock, Age impacted how often people listened to all genres. The older participants were, the more often they listened to Classical, Country, Folk and Jazz. However, the prediction was the complete opposite for the remaining genres, as older age predicted that participants listened to them less. </p>
 Then, I ran 4 multiple regression analyses with age as the second independent variable. 
 
-<img src="https://finneyj2.github.io/projects/img/Screenshots/pandas_6B.PNG" width="500" height="410"/>
+<img src="https://finneyj2.github.io/projects/img/Screenshots/pandas_6B.PNG" width="810" height="810"/>
 
 <p>This analysis revealed that bringing age into the equation led some IVs to have a weaker impact than initially indicated. The Instrumentalist identity’s results remained largely the same, aside from R&B. The multiple regression analysis indicated that neither age nor instrumentalist identity predicted how often participants listen to R&B. The relationship between the composer identity and participant listening habits were unchanged when age was added to the model. Similarly, the results for multilingual music fans also remained largely unchanged, with the exception of Pop. After age was factored into the model, Pop was no longer predicted by this identity.  The Musician identity’s results were somewhat similar, as the results were largely unchanged by the consideration of age. However, Metal could no longer be predicted by the Musician identity. Additionally, its range of impact expanded to include Gospel as well, predicting an increase in frequency for that genre. 
 
