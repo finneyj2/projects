@@ -1,5 +1,65 @@
 <!DOCTYPE html>
+<html lang= "en">
+  <head>
+    <style>
+   .header {
+  padding: 60px;
+  text-align: center;
+  background: #536878;
+  color: white;
+  font-size: 30px;
+}
+  .topnav {
+  background-color: #333;
+  overflow: hidden;
+}
 
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #40E0D0;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+   .rightcolumn {
+  float: left;
+  width: 75%;
+}
+
+    .card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+   /* Navigation menu code */
+    </style>
+  </head>
+ 
+ <div class="header">
+  <h1>Data Analysis</h1>
+
+  <p>Data analysis projects that will include python and sql</p>
+
+</div>
+
+<body>
+  <div class="topnav">
+
+  <a href="https://finneyj2.github.io/projects/">Home</a>
+  <a href="https://finneyj2.github.io/projects/Pages/Miscellaneous_Coding_Projects.html">Other Coding Projects</a>
+  <a href="https://finneyj2.github.io/projects/blog_posts/blog_posts.html"> Data Analysis Blog Posts </a>
+</div>
+<body style="background-color: #bbb;">
+<meta charset="utf-8">
+<title> Music</title>
+<div class="row">
+<div class="rightcolumn">
+ <div class="card">
+   <div class="card-body">
+     
 <p> My first observation from my exploratory data analysis was that most participants reported that their mood improved while listening to music. This held true regardless of whether they played instruments(82%) or not(72%); however, instrumentalists and non-instrumentalists did seem to have differences in music preferences. Specifically, nearly a third of instrumentalists report never listening to hip-hop, compared to approximately 1/5th of the general population reporting the same. This led me to hypothesize a correlation between being an instrumentalist and music preferences. Since fewer instrumentalists appear to be listening to hip-hop, I also sought to investigate whether the same may be true for related genres such as Kpop and R&B.
 
 <p>>In order to properly measure this, I ran an ordinary least squares regression with multiple different identities serving as the IVs, while music genres remained the dependent variable. The genres included were Classical, Country, EDM, Folk, Gospel, Hip hop, Jazz, K pop, Latin, Lofi, Metal, Pop, R&B, Rap, Rock, and video game music. I conducted the analysis using python, specifically the statsmodels and pandas libraries. </p>
