@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Version="28" AppVersion="5.8.2.11" ReadKey="readkey.OWftY69ax1s=.PPKXodWkvtuLnbgExaSHbQ==.YrVWwzu7OH/jpgSB/7b+VElpY9C/Srw5mx04ZXSadToepqEW3NTmUKgAZNb/KnoPjuvvbL4ikWym5ZODDnA5dtQIiJNcuvkRGc58y7LV5ew=.SQvt/zL/a5/3dS0zBBLVlgZxCLhx+3ufZXBnJtmCssM=." WriteKeyPublic="BgIAAACkAABSU0ExAAgAAAEAAQDZcUuF7C1mSlizjEBkB6szSzOT6SZiBzTpWElF01LTEsDNFBa7Of26vGF+rTDtSzJqa+8VjOZAsl+NCkW81oaBJ2UEFSYCCepDuLE2OsodU3MUC+g21V7lqKJ+RGxq/shv3o2ckucmn0wPcE8pKusDrYZfRWRrs5Qzjc1jZgD0ZBDOJZpIrkbIXFlWvzVpbfB96Db/0Vs5/dpyk1dOROBHLPPWWH8AJKbmieRLDMo9/3LtxFnP9nT3rLfQ8+SG2qDhDCq5BMoGNGBBLy/lnyuV+n5dflDvVX8bOJsS+bSt+cAmlI2p5SWZvy8yxwHrcl9Rbts9g3Em5ruV1Kkv+ALV" StartModuleName="Main" EditedBy="DESKTOP-UJFPQKG\jahli" LastEdited="2024-12-23T03:03:31.3113558Z" ComplexityLevel="Beginner" Signature="nQS9GQHtuKG0p4oyE/NAsc+vlQth0eJOnMcpvxk56bs=">
+  <Modules>
+    <Module Name="Main" AutoRun="true" SelectedGroupName="Group 1">
+      <Groups>
+        <Group Name="Group 1">
+          <ModelObjects>
+            <Table Name="2.csv" Left="130" Top="74" Width="500" Height="300" IsMinimized="false" ActiveActionIndex="1">
+              <Actions>
+                <ImportDelimitedTextAction AutoStatus="true" DecimalSeparator="Point" ThousandSeparator="Space" ShowParsingErrors="false" IgnoreQuoting="false" NumericValuesTreatmentOption="AlwaysAsNumbers" ColumnsDontHaveHeaders="false" LoadAllColumns="true" AddColumnsWhenRowsHaveMoreValuesThanHeaders="false">
+                  <InputFileDefinition Mode="Single">
+                    <FileName Value="C:\Users\jahli\Documents\projects\Noise&amp;Sentiment\Converted_Files\tracts\2.csv" Type="Path" />
+                  </InputFileDefinition>
+                  <SkipLines Value="0" Type="Number" />
+                  <MaxLines Value="0" Type="Number" />
+                  <Separator SeparatorType="Comma" />
+                  <Encoding EncodingType="UTF8" />
+                </ImportDelimitedTextAction>
+                <SortAction>
+                  <SortColumns>
+                    <SortColumn ColumnName="GEOID" SortOrder="Ascending" />
+                  </SortColumns>
+                </SortAction>
+              </Actions>
+              <AnalysisView LayoutMode="Filters" />
+            </Table>
+            <Table Name="cb_2018_01_tract_500k.csv" Left="98" Top="69" Width="500" Height="298" IsMinimized="false" ActiveActionIndex="1">
+              <Actions>
+                <ImportDelimitedTextAction AutoStatus="true" DecimalSeparator="Point" ThousandSeparator="Space" ShowParsingErrors="false" IgnoreQuoting="false" NumericValuesTreatmentOption="AlwaysAsNumbers" ColumnsDontHaveHeaders="false" LoadAllColumns="true" AddColumnsWhenRowsHaveMoreValuesThanHeaders="false">
+                  <InputFileDefinition Mode="Single">
+                    <FileName Value="C:\Users\jahli\Downloads\mygeodata\cb_2018_01_tract_500k.csv" Type="Path" />
+                  </InputFileDefinition>
+                  <SkipLines Value="0" Type="Number" />
+                  <MaxLines Value="0" Type="Number" />
+                  <Separator SeparatorType="Comma" />
+                  <Encoding EncodingType="UTF8" />
+                </ImportDelimitedTextAction>
+                <SortAction>
+                  <SortColumns>
+                    <SortColumn ColumnName="GEOID" SortOrder="Ascending" />
+                  </SortColumns>
+                </SortAction>
+              </Actions>
+              <AnalysisView LayoutMode="Filters" />
+            </Table>
+          </ModelObjects>
+        </Group>
+      </Groups>
+      <Parameters />
+      <Report UseCustomFileNameForPdfExport="false" ShowPageBorders="true">
+        <Pages>
+          <Page Name="Page 1" IncludeInReport="true">
+            <ReportObjects />
+          </Page>
+        </Pages>
+        <PageSetup Orientation="Landscape" Margin="Narrow" Size="Letter" />
+      </Report>
+    </Module>
+  </Modules>
+  <ProtectedDataConnectors />
+  <Resources />
+</Project>
